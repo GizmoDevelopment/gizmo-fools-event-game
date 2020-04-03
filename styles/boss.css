@@ -1,0 +1,77 @@
+@font-face {
+    font-family: "Whitney";
+    font-display: block;
+    src: url("../assets/Whitney SemiboldItalic.otf");
+}
+
+* {
+    color: #FFF;
+    font-family: Whitney;
+    user-select: none;
+}
+
+@keyframes shake {
+    from { transform: rotateX(0deg); }
+    to { transform: rotateX(360deg); }
+}
+
+@keyframes shaketwo {
+    from { transform: rotateZ(0deg) skew(0deg, 0deg) scaleY(1) scaleX(1); }
+    to { transform: rotateZ(360deg) skew(-360deg, 360deg) scaleY(1.7) scaleX(-1.7); }
+}
+
+@keyframes beat {
+    0% { transform: skew(0deg, 0deg) scaleX(1) scaleY(1); }
+    50% { transform: skew(50deg, 50deg) scaleX(.5) scaleY(.5); }
+    100% { transform: skew(0deg, 0deg) scaleX(1.5) scaleY(1.5); }
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+img {
+    border-radius: 10px;
+}
+
+canvas {
+    background: #222;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+#ramBox {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 40%;
+    left: calc(50% - 50px);
+    display: none;
+}
+
+#ramText {
+    background: rgba(0, 0, 0, .2);
+    border-radius: 10px;
+    width: 60%;
+    height: 250px;
+    position: absolute;
+    top: calc(40% + 200px);
+    left: 20%;
+    text-align: center;
+    word-wrap: normal;
+    display: none;
+}
+
+#ramTextIcon {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 78%;
+    top: calc(40% + 400px);
+    display: none;
+}
