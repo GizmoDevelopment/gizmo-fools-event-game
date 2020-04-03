@@ -53,7 +53,6 @@ $(document).ready($ => {
     }
 
     function rectIntersect (obj1, obj2) {
-        return false;
         return !(
             ((obj1.y + obj1.height) < (obj2.y)) ||
             (obj1.y > (obj2.y + obj2.height)) ||
